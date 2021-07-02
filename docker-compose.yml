@@ -1,0 +1,11 @@
+version: '3'
+services:
+  schort:
+    build: '.'
+    restart: unless-stopped
+    volumes:
+        - "schort:/schort/data"
+    ports:
+        - "8080:8080"
+volumes:
+   schort:
